@@ -1,3 +1,4 @@
+<script>
 $(document).ready(function(){
   var memory_array = ["fish", "fish", "turtle", "turtle", "pig", "pig", "dog", "dog", "cat", "cat", "snake", "snake", "bird", "bird", "goat", "goat", "hamster", "hamster", "dragon", "dragon"]
   var memory_tile_ids =[];
@@ -58,3 +59,4 @@ function memoryFlipTile(tile,val){
         }
       }
     }
+</script>
