@@ -20,6 +20,7 @@ function newBoard(){
     otuput+='<div id= "tile'+i+' " onclick="memoryFlipTile(this,\'' +memory_array[i]+'\')"></div>';
   }
   document.getElementById('memory_board').innerHTML=output;
+  window.addEventListener(
 }
 function memoryFlipTile(tile,val){
   if(tile.innerHTML==""&&memory_values.length<2{
