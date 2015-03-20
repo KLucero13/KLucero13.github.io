@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    
-    //function getGrocery() {     - didn't need it ... it worked!
+
         
         //append to list using the + button
         $("#addbutton").click(function(enter) {
@@ -17,10 +16,9 @@ $(document).ready(function() {
         });
     //};
     
-    //defined getGrocery, call it!
+    //defined getGrocery
     //getGrocery();
     
-    //got the grocery, print it!
     function postGrocery() {
         var grocery = $("#groceries").val();
         var listitem = '<li class="notbought"><img src="../shoppingList/images/check.jpg" alt="checkbox" id="checkbox">' +grocery+ '<input type="button" id="delete" value="Delete"> </li>'
@@ -32,7 +30,7 @@ $(document).ready(function() {
             alert("Please enter something to get from the store.");
         }
         else {
-            // $(".items").hide(grocery); - find a way to fade it in later ... 
+            // $(".items").hide(grocery);
             $(".items").append(listitem).fadeIn(200);
             $("#groceries").val("");
             console.log(grocery);
