@@ -1,13 +1,11 @@
 $(document).ready(function() {
 
         
-        //append to list using the + button
         $("#addbutton").click(function(enter) {
            console.log("+ was pressed.");
            postGrocery();
         });
         
-        //append to the list using enter
         $("#groceries").keydown(function(enter) {
             if (enter.keyCode==13) {
                 console.log("enter is pressed.");
