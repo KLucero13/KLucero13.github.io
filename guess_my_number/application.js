@@ -1,6 +1,5 @@
-
-
-        <script type="text/javascript">
+$(document).ready(function(){
+  //find a way for the program to choose a random number between 1 and 100, save this as a variable
             var game = {
                 num : 0,
                 turns : 1,
@@ -48,6 +47,5 @@
             }
 
             resetGame();
-        </script>
-    </head>
+)};
 
