@@ -1,6 +1,4 @@
-<html>
-    <head>
-        <title>Guess My Number</title>
+
 
         <script type="text/javascript">
             var game = {
