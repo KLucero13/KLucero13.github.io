@@ -1,26 +1,14 @@
 $(document).ready(function(){
   //find a way for the program to choose a random number between 1 and 100, save this as a variable
-            var game = {
-                num : 0,
-                turns : 1,
-                reset : function() {
-                    this.turns = 1;
-                    this.newNum();
-                },
-                newNum() : function() {
-                    this.num = parseInt(Math.random() * 10) +1;
-                },
-                checkNum() : function(guess) {
-                    try {
-                        guess = parseInt(guess);
-                    }
-                    catch(e) {
-                        alert("Enter a guess!");
-                        this.turns++;
-                        return false;
-                    }
-
-                    if (guess == this.num) {
+  var answer = parseInt(Math.random() * 100) +1;
+  //when the player clicks on the 'guess' button
+  $('button').on('click', function(){
+    //save their guess as a variable
+    var guessednumber= $('input').val();
+    
+    //and compare this guess to the random number that the computer picked
+    //if the user guessed the correct number...
+    if (guess == this.num) {
                         alert("Correct! It took you " + this.turns + "turns to guess my number.");
                         return true;
                     }
@@ -32,7 +20,31 @@ $(document).ready(function(){
                     else (guess < this.num) {
                         alert("Your guess is too low. Try again.");
                         this.turns++;
+                        return false;at happens if the guess is correct?
+    
+      //update the 'feedback' paragraph to tell them to guess lower
+    
+    
+      //update the 'feedback' paragraph to tell them to guess higher
+            var game = {
+                num : 0,
+                turns : 1,
+                reset : function() {
+                    this.turns = 1;
+                    this.newNum();
+                },
+                newNum() : function() {
+                    this.num = ;
+                },
+                checkNum() : function(guess) {
+                    try {
+                        guess = parseInt(guess);
+                    }
+                    catch(e) {
+                        alert("Enter a guess!");
+                        this.turns++;
                         return false;
+                    }
                     }
                 }
             };
