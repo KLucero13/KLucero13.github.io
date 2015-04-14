@@ -23,23 +23,15 @@ $(document).ready(function(){
                         return false;at happens if the guess is correct?
     
       //update the 'feedback' paragraph to tell them to guess lower
-    
-    
-      //update the 'feedback' paragraph to tell them to guess higher
-            var game = {
+    var game = {
                 num : 0,
                 turns : 1,
                 reset : function() {
                     this.turns = 1;
                     this.newNum();
                 },
-                newNum() : function() {
-                    this.num = ;
-                },
-                checkNum() : function(guess) {
-                    try {
-                        guess = parseInt(guess);
-                    }
+    
+    
                     catch(e) {
                         alert("Enter a guess!");
                         this.turns++;
