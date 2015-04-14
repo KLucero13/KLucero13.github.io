@@ -5,7 +5,7 @@ $(document).ready(function(){
   $('button').on('click', function(){
     //save their guess as a variable
     var guessednumber= $('input').val();
-    
+  }
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
     if (guess == this.num) {
@@ -21,8 +21,7 @@ $(document).ready(function(){
                         alert("Your guess is too low. Try again.");
                         this.turns++;
                         return false;at happens if the guess is correct?
-    
-      //update the 'feedback' paragraph to tell them to guess lower
+                    }
     var game = {
                 num : 0,
                 turns : 1,
