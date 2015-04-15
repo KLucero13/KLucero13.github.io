@@ -5,32 +5,18 @@ $(document).ready(function(){
   $('button').on('click', function(){
     //save their guess as a variable
     var guessednumber= $('input').val();
-  }
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
     if (guessednumber == answer) {
-                         alert("Correct! It took you " + this.turns + "turns to guess my number.");
-                        return true;
+      alert("Correct!");
     }
-                  else if(guessednumber > answer) {
-                         alert("Your guess is too high. Try again.");
-                        this.turns++;
-                         return false;
-                    }
-                     else (guessednumber < answer) {
-                         alert("Your guess is too low. Try again.");
-                        this.turns++;
-                        return false;at happens if the guess is correct?
-                     }
-     var game = {
-                num : 0,
-                 turns : 1,
-               reset : function() {
-                   this.turns = 1;
-                   this.newNum();
-               },
-    
-    
+    else if(guessednumber > answer) {
+      alert("Your guess is too high. Try again.");
+    }
+    else {
+      alert("Your guess is too low. Try again.");
+    }
+  }
     //                 catch(e) {
     //                     alert("Enter a guess!");
     //                     this.turns++;
