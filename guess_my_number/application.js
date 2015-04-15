@@ -8,47 +8,47 @@ $(document).ready(function(){
   }
     //and compare this guess to the random number that the computer picked
     //if the user guessed the correct number...
-    if (guess == this.num) {
-                        alert("Correct! It took you " + this.turns + "turns to guess my number.");
+    if (guessednumber == answer) {
+                         alert("Correct! It took you " + this.turns + "turns to guess my number.");
                         return true;
-                    }
-                    else if(guess > this.num) {
-                        alert("Your guess is too high. Try again.");
+    }
+                  else if(guessednumber > answer) {
+                         alert("Your guess is too high. Try again.");
                         this.turns++;
-                        return false;
+                         return false;
                     }
-                    else (guess < this.num) {
-                        alert("Your guess is too low. Try again.");
+                     else (guessednumber < answer) {
+                         alert("Your guess is too low. Try again.");
                         this.turns++;
                         return false;at happens if the guess is correct?
-                    }
-    var game = {
+                     }
+     var game = {
                 num : 0,
-                turns : 1,
-                reset : function() {
-                    this.turns = 1;
-                    this.newNum();
-                },
+                 turns : 1,
+               reset : function() {
+                   this.turns = 1;
+                   this.newNum();
+               },
     
     
-                    catch(e) {
-                        alert("Enter a guess!");
-                        this.turns++;
-                        return false;
-                    }
-                    }
-                }
-            };
+    //                 catch(e) {
+    //                     alert("Enter a guess!");
+    //                     this.turns++;
+    //                     return false;
+    //                 }
+    //                 }
+    //             }
+    //         };
 
-            function guessNumber() {
-                var guess = document.getElementById("guess").value;
-                game.checkGuess(guess);
-            }
+    //         function guessNumber() {
+    //             var guess = document.getElementById("guess").value;
+    //             game.checkGuess(guess);
+    //         }
 
-            function resetGame() {
-                game.reset();
-            }
+    //         function resetGame() {
+    //             game.reset();
+    //         }
 
-            resetGame(); 
+    //         resetGame(); 
 )};
 
