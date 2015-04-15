@@ -16,7 +16,7 @@ $(document).ready(function(){
     else {
       alert("Your guess is too low. Try again.");
     }
-  }
+  });
     //                 catch(e) {
     //                     alert("Enter a guess!");
     //                     this.turns++;
